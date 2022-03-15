@@ -1,5 +1,5 @@
 <template>
-     <div>
+     <div class="escena">
     <p>{{escena}}</p>
   </div>
 </template>
@@ -19,5 +19,10 @@ export default {
 
 
 <style>
-
+.escena {
+    margin: 1rem;
+    border-radius: 5rem;
+    border: 2px solid black;
+    text-align: center;
+}
 </style>
