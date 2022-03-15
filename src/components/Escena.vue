@@ -1,17 +1,20 @@
 <template>
-    <p>El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial</p>
+     <div>
+    <p>{{escena}}</p>
+  </div>
 </template>
 
 
 
-
 <script>
+export default {
+  name: 'Escena',
+  props: {
+    escena: String,
+  }
+}
 
 </script>
-
-
-
-
 
 
 
