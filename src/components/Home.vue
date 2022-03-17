@@ -1,8 +1,12 @@
 <template>
-      <Benvinguda @start="benvinguda" v-if="start"></Benvinguda>
-    <div class="container" v-else>
+      <Benvinguda @start="benvinguda" v-if="false"></Benvinguda>
+    <div class="container" v-else :style="{ backgroundImage: `url(${textos[currentSentence].img})`}">
       <Botons @prev="recivePrev" @seg="reciveSeg"></Botons>
       <Escena :text="textos" :activeSentence="currentSentence"></Escena>
+      <img src="../assets/1.jpg" alt="">
+      <img :src=require('../assets/${textos[currentSentence].imga}') alt="">
+      {{textos[currentSentence].imga}}
+     
     </div>
 </template>
 
@@ -18,14 +22,12 @@ export default {
     Escena,
     Botons
   },
-  style: {
-          backgroundImage: "url(../uploads/portadaVue6.png)",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        },
   data(){
     return {
-      textos: ["El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial", "Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.","L'heroi va decidir travessar la porta que el portava a casa","Mentrestant, altres heroes no van tenir tanta sort en la seva elecció..."],
+      textos: [{txt: "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial", imga:"1.jpg"},
+      {txt: "Sentia curiositat per l'interior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.", img:require("../assets/2.jpg")},
+      {txt: "L'heroi va decidir travessar la porta que el portava a casa", img:require("../assets/3.jpg")},
+      {txt: "Mentrestant, altres heroes no van tenir tanta sort en la seva elecció...", img:require("../assets/4.jpg")}],
       currentSentence: 0,
       start: true
       }
@@ -38,7 +40,7 @@ export default {
       },
        reciveSeg(currentSentence){
          if(this.currentSentence < (this.textos.length-1)){
-          this.currentSentence++
+          this.currentSentence++;
          }
       },
       benvinguda(start){
@@ -51,5 +53,6 @@ export default {
 
 
 <style>
+
 
 </style>

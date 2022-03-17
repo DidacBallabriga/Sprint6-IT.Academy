@@ -4,7 +4,7 @@
           v-for = "(texto,i) in text" 
           :key="i"
           :class="{active: i === activeSentence}"> 
-          {{ texto }}
+          {{ texto.txt }}
         </p>
   </div>
 </template>
@@ -15,10 +15,12 @@ export default {
   name: 'Escena',
   props: ['text','activeSentence']
 }
+
 </script>
 
 
 <style scoped>
+
 p {
     padding: 1rem;
     margin: 1rem;

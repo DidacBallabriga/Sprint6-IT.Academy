@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="../../uploads/portadaVue6.png" alt="">
+    <img src="../assets/portadaVue6.png" alt="">
     <button @click="$emit('start')">COMENÇAR</button>
   </div>
 
@@ -106,6 +106,7 @@ content: '';
 button:hover::before, button:focus::before {
   opacity: 1;
 }
+
 button::after {
   content: '';
   width: 30px; height: 30px;
@@ -118,10 +119,12 @@ button::after {
   transform: translate(-50%, -50%);
   animation: ring 1.5s infinite;
 }
+
 button:hover::after, button:focus::after {
   animation: none;
   display: none;
 }
+
 @keyframes ring {
   0% {
     width: 30px;
@@ -134,4 +137,5 @@ button:hover::after, button:focus::after {
     opacity: 0;
   }
 }
+
 </style>
