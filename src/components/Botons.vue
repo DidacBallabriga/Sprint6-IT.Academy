@@ -13,7 +13,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 .botons{
     width: 100%;
     display: flex;
@@ -23,5 +23,4 @@ button {
     height: 4rem;
     font-size: 1.5rem;
 }
-
-</style>
+</style>>
