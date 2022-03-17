@@ -4,8 +4,7 @@
       <Botons @prev="recivePrev" @seg="reciveSeg"></Botons>
       <Escena :text="textos" :activeSentence="currentSentence"></Escena>
       <img src="../assets/1.jpg" alt="">
-      <img :src=require('../assets/${textos[currentSentence].imga}') alt="">
-      {{textos[currentSentence].imga}}
+
      
     </div>
 </template>
