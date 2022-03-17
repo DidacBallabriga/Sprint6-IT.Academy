@@ -20,6 +20,9 @@ export default {
 
 
 <style scoped>
+.frases{
+  height: 100vw;
+}
 
 p {
     padding: 1rem;
@@ -27,6 +30,7 @@ p {
     border-radius: 5rem;
     border: 2px solid black;
     text-align: center;
+    background-color: rgba(240, 255, 255, 0.623);
 }
 .active {
   background-color: #ffc0cb;
