@@ -1,4 +1,4 @@
-<template>
+<template v-if="ok" >
   <home></home>
 </template>
 

@@ -18,7 +18,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 p {
     padding: 1rem;
     margin: 1rem;
@@ -29,4 +29,4 @@ p {
 .active {
   background-color: #ffc0cb;
 }
-</style>
+</style>>
