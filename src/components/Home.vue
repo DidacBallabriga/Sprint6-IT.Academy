@@ -36,9 +36,13 @@ export default {
         }
       },
        reciveSeg(currentSentence){
-         if(this.currentSentence < (this.textos.length-1)){
+        if(this.currentSentence < (this.textos.length-1)){
           this.currentSentence++;
-         }
+           }
+        else {
+          this.currentSentence = 0;
+        }
+        
       },
       benvinguda(start){
         this.start = false;
