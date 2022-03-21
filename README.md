@@ -1,5 +1,7 @@
 # sprint6
 
+👨‍💻 Check out this proyect --> https://didacballabriga.github.io/Sprint6-IT.Academy/
+
 ## Project setup
 ```
 npm install
